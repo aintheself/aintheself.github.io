@@ -1,26 +1,20 @@
-# AI and the Self workshop site
+# AI and the Self — refined website
 
-This is a lightweight static website for the AI and the Self NeurIPS 2026 workshop.
+Static site for the NeurIPS 2026 workshop **AI and the Self**.
 
-## Files
-
+## Pages
 - `index.html` — compact homepage
-- `call-for-papers.html` — detailed call for papers and reviewers page
-- `assets/styles.css` — all site styling
-- `assets/script.js` — simple mobile navigation and placeholder-link behavior
-- `assets/ai-and-self-proposal.pdf` — embedded workshop proposal PDF
-- `assets/neurips-logo.svg` — NeurIPS logo used in the linked conference badge
+- `call-for-papers.html` — workshop description and CFP
+- `schedule.html` — tentative one-day schedule
+- `organizers.html` — organizer bios
+- `assets/styles.css` — main stylesheet
+- `assets/script.js` — small mobile-nav / placeholder-link script
+- `assets/neurips-logo.svg` — official NeurIPS logo asset
 
-## Replace before publishing
+## Placeholders to replace
+- `OpenReview submission portal`
+- `Reviewer registration form`
+- `December 12 or 13, 2026` (replace once the exact day is known)
 
-- OpenReview submission portal link
-- Reviewer registration form link
-- Exact workshop day in Paris
-- Any final submission formatting or policy details
-- Contact email, if you want one visible on the site
-
-## Notes
-
-- The homepage is intentionally short and academic in tone.
-- The layout is fully static and GitHub Pages friendly.
-- The current placeholder action links are visibly marked with “add link” so they are easy to find.
+## GitHub Pages
+Upload the files to the repository root so that `index.html` sits at the top level.
