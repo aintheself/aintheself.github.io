@@ -1,20 +1,25 @@
-# AI and the Self — refined website
+Place organizer headshots in this folder using these exact filenames:
 
-Static site for the NeurIPS 2026 workshop **AI and the Self**.
+- akhil-arora.jpg
+- monojit-choudhury.jpg
+- mukund-choudhary.jpg
+- abdoul-jalil-djiberou-mahamadou.jpg
+- jacki-oneill.jpg
+- haneesha-pinnamaraju.jpg
+- sandrine-r-schiller.jpg
 
-## Pages
-- `index.html` — compact homepage
-- `call-for-papers.html` — workshop description and CFP
-- `schedule.html` — tentative one-day schedule
-- `organizers.html` — organizer bios
-- `assets/styles.css` — main stylesheet
-- `assets/script.js` — small mobile-nav / placeholder-link script
-- `assets/neurips-logo.svg` — official NeurIPS logo asset
+Recommended crop: square or 4:5 portrait.
+Recommended minimum size: 800 px on the shorter side.
+JPG, PNG, or WebP all work if you update the HTML paths.
 
-## Placeholders to replace
-- `OpenReview submission portal`
-- `Reviewer registration form`
-- `December 12 or 13, 2026` (replace once the exact day is known)
+If a headshot is missing, the organizers page falls back to the placeholder SVGs in assets/organizers/.
 
-## GitHub Pages
-Upload the files to the repository root so that `index.html` sits at the top level.
+Suggested public source pages:
+
+- Akhil Arora: https://www.au.dk/en/akhil.arora%40cs.au.dk
+- Monojit Choudhury: https://mbzuai.ac.ae/study/faculty/monojit-choudhury/
+- Mukund Choudhary: https://mukundc2k.github.io/
+- Abdoul Jalil Djiberou Mahamadou: https://abdjiber.github.io/
+- Jacki O'Neill: https://www.microsoft.com/en-us/research/people/jaoneil/
+- Haneesha Pinnamaraju: https://shinecdc.ae/meet-the-shine-team/dr-haneesha-pinnamaraju/
+- Sandrine R. Schiller: https://www.aicentre.dk/people/sandrine-rose-schiller-hansen

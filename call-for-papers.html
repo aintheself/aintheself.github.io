@@ -3,11 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Call for Papers | AI and the Self</title>
-  <meta name="description" content="Call for papers for the AI and the Self workshop at NeurIPS 2026.">
+  <title>Calls | AI and the Self</title>
+  <meta name="description" content="Reviewer call and call for papers for the AI and the Self workshop at NeurIPS 2026.">
   <meta name="theme-color" content="#3855a5">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%233855a5'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-size='46' fill='white' font-family='Georgia, serif'%3EAS%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .calls-shell {
+      max-width: 900px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 1.45rem;
+    }
+    .calls-section + .calls-section {
+      margin-top: 1.45rem;
+      padding-top: 1.45rem;
+      border-top: 1px solid var(--line);
+    }
+    .calls-section h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+    .calls-section p:last-child {
+      margin-bottom: 0;
+    }
+    .calls-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-top: 1rem;
+    }
+    .calls-list {
+      margin: 0.9rem 0 0;
+      padding-left: 1.15rem;
+    }
+    .calls-list li {
+      margin-bottom: 0.45rem;
+    }
+    .dates-list {
+      margin: 0;
+      padding-left: 1.15rem;
+    }
+    .dates-list li {
+      margin-bottom: 0.4rem;
+    }
+    .calls-note {
+      margin-top: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -21,7 +67,7 @@
       </button>
       <nav class="site-nav" data-nav>
         <a href="index.html">Home</a>
-        <a href="call-for-papers.html" aria-current="page">Call for Papers</a>
+        <a href="call-for-papers.html" aria-current="page">Calls</a>
         <a href="schedule.html">Schedule</a>
         <a href="organizers.html">Organizers</a>
       </nav>
@@ -30,157 +76,54 @@
 
   <main>
     <section class="hero page-hero page-hero-tight">
-      <div class="container content-grid">
-        <div>
-          <div class="eyebrow">Call for Papers</div>
-          <h1 class="page-title page-title-small">AI and the Self</h1>
-          <p class="page-subtitle">Human Identity, Authenticity, and Agency in the Age of AI</p>
-          <p class="hero-text">This page adapts the central ideas of the proposal into a public-facing call: the workshop’s motivation, themes, submission scope, and current dates.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#submission">Submission details</a>
-            <a class="button button-secondary" href="schedule.html">Schedule</a>
-          </div>
-        </div>
-        <aside class="resource-card">
-          <div class="panel-heading compact-head">
-            <div>
-              <div class="kicker">Important dates</div>
-              <h2>Current timeline</h2>
-            </div>
-          </div>
-          <div class="date-list">
-            <div class="date-box"><span>Submissions open</span><strong>July 24, 2026</strong></div>
-            <div class="date-box"><span>Submission deadline</span><strong>August 27, 2026 (AoE)</strong></div>
-            <div class="date-box"><span>Notification of acceptance</span><strong>September 28, 2026</strong></div>
-            <div class="date-box"><span>Workshop</span><strong>December 12 or 13, 2026</strong></div>
-          </div>
-        </aside>
+      <div class="container">
+        <div class="eyebrow">Calls</div>
+        <h1 class="page-title page-title-small">Reviewer call and call for papers</h1>
+        <p class="hero-text">Reviewer information comes first, followed by the paper call and key dates.</p>
       </div>
     </section>
 
     <section class="section section-compact">
-      <div class="container content-grid">
-        <article class="surface prose">
-          <div class="section-head compact-head">
-            <div>
-              <div class="kicker">Topic, motivation, and relevance</div>
-              <h2>Why this workshop now</h2>
-            </div>
-          </div>
-          <p>Large language models, recommender systems, and multimodal agents are no longer just external tools. They increasingly mediate personal awareness, preferences, memory, reflection, and identity formation.</p>
-          <p>Yet the scholarly conversation on AI and selfhood has remained concentrated in normative ethics and philosophy. What is still missing is computational and empirical infrastructure: ways to model preference shift, track longitudinal changes in self-representation, and evaluate when systems reshape rather than merely reflect user values.</p>
-          <p>AI and the Self aims to bring these questions into the core of machine learning research by treating self-dynamics as something that can be studied, measured, and designed for in coupled human-AI systems.</p>
-        </article>
-
-        <aside class="resource-card">
-          <div class="panel-heading compact-head">
-            <div>
-              <div class="kicker">Workshop scope</div>
-              <h2>Interdisciplinary by design</h2>
-            </div>
-          </div>
-          <p>This workshop connects machine learning, NLP, HCI, cognitive science, psychology, philosophy, sociology, education, healthcare, and ethics.</p>
-          <p class="muted-block">We are especially interested in work that bridges technical methods with empirical, cultural, social, or conceptual analysis.</p>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section section-compact border-top">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="kicker">Themes</div>
-            <h2>Workshop themes</h2>
-          </div>
-          <p class="section-text">The workshop is organized around five linked themes connecting technical AI research with empirical, social, cultural, and philosophical inquiry.</p>
-        </div>
-        <div class="card-grid-wide">
-          <article class="topic-card">
-            <h3>Measurement and evaluation</h3>
-            <p>How can we measure AI’s effects on self-concept, agency, confidence, dependence, identity formation, and skill change?</p>
-          </article>
-          <article class="topic-card">
-            <h3>Technical design and interaction</h3>
-            <p>How should AI systems implement memory, personalization, uncertainty, abstention, refusal, and “not knowing” without encouraging over-agreement or unhealthy attachment?</p>
-          </article>
-          <article class="topic-card">
-            <h3>Culture, language, and worldview</h3>
-            <p>How do AI systems encode assumptions about the self, intelligence, emotion, and agency, and how can they better support diverse identities?</p>
-          </article>
-          <article class="topic-card">
-            <h3>Professional, educational, and epistemic transformation</h3>
-            <p>How does AI change learning, authorship, expertise, creativity, classroom culture, and professional identity?</p>
-          </article>
-          <article class="topic-card">
-            <h3>Philosophical, ethical, legal, and spiritual foundations</h3>
-            <p>How should autonomy, responsibility, consciousness, authorship, and personhood be understood when self-expression is co-created with AI?</p>
-          </article>
-        </div>
-      </div>
-    </section>
+        <article class="calls-shell">
+          <section class="calls-section">
+            <div class="kicker">Reviewers</div>
+            <h2>Call for reviewers</h2>
+            <p>We are recruiting reviewers for <em>AI and the Self</em>, a NeurIPS 2026 workshop. We welcome advanced PhD students, postdocs, faculty, and independent researchers with backgrounds in AI/ML, NLP, HCI, cognitive science, psychology, philosophy of mind, sociology or anthropology, education, digital mental health or healthcare, ethics, law or policy, and related fields.</p>
+            <p>We especially welcome reviewers with an interest in interdisciplinary submissions, and even if your expertise is rooted in one discipline or method, your perspective would be highly valuable. Reviewers will typically be assigned up to 2-3 papers and should have an up-to-date OpenReview profile.</p>
+            <div class="calls-links">
+              <a class="button button-primary" href="https://forms.gle/ciV5nPKBbwipQALq6" target="_blank" rel="noopener noreferrer">Reviewer registration</a>
+            </div>
+          </section>
 
-    <section class="section section-compact border-top" id="submission">
-      <div class="container content-grid">
-        <article class="surface">
-          <div class="section-head compact-head">
-            <div>
-              <div class="kicker">Submissions</div>
-              <h2>What we invite</h2>
+          <section class="calls-section">
+            <div class="kicker">Papers</div>
+            <h2>Call for papers</h2>
+            <p>We invite submissions at the intersection of AI/ML and human selfhood, spanning technical, empirical, and humanistic perspectives. The workshop is interested in questions around identity, agency, authenticity, dependence, self-modeling, memory, authorship, value change, culture, and AI-mediated reflection.</p>
+            <ul class="calls-list">
+              <li>Long papers: up to 8 pages of content, plus unlimited references and appendix.</li>
+              <li>Short papers: up to 4 pages of content, plus unlimited references and appendix.</li>
+              <li>All submissions are non-archival and must be anonymized for double-blind review.</li>
+              <li>Work in progress, early findings, and interdisciplinary provocations are welcome.</li>
+            </ul>
+            <div class="calls-links">
+              <a class="button button-primary" href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/AI_and_the_Self" target="_blank" rel="noopener noreferrer">OpenReview submission portal</a>
             </div>
-          </div>
-          <div class="submission-list">
-            <div>
-              <h3>Technical work</h3>
-              <p>Model design, personalization, memory, uncertainty, abstention, interaction design, and evaluation.</p>
-            </div>
-            <div>
-              <h3>Empirical studies</h3>
-              <p>AI-mediated reflection, development, education, dependence, identity formation, and longitudinal human-AI interaction.</p>
-            </div>
-            <div>
-              <h3>Conceptual work</h3>
-              <p>Selfhood, agency, authenticity, responsibility, consciousness, authorship, culture, and personhood.</p>
-            </div>
-            <div>
-              <h3>Applications and demos</h3>
-              <p>Education, mental health, physical health, avatars, reflective systems, and cultural-preservation tools.</p>
-            </div>
-          </div>
-        </article>
+            <p class="calls-note">The call welcomes technical, empirical, and humanistic work on AI, identity, agency, memory, culture, and selfhood.</p>
+          </section>
 
-        <aside class="resource-card">
-          <div class="panel-heading compact-head">
-            <div>
-              <div class="kicker">Format</div>
-              <h2>Submission notes</h2>
-            </div>
-          </div>
-          <ul class="bullet-list compact-list">
-            <li>Short and long <strong>non-archival</strong> papers.</li>
-            <li>Technical, empirical, socio-cultural, philosophical, and application-oriented perspectives are all welcome.</li>
-            <li>Work in progress, early findings, and new problem framings are encouraged.</li>
-            <li>Submissions must be unpublished and not under review elsewhere.</li>
-            <li>Work accepted to the main conference may not be presented here.</li>
-          </ul>
-          <div class="hero-actions hero-actions-tight">
-            <a class="button button-primary" href="#" data-placeholder-link>OpenReview submission portal</a>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section section-compact border-top">
-      <div class="container content-grid">
-        <article class="subtle-panel">
-          <div class="kicker">Reviewers</div>
-          <h2>Call for reviewers</h2>
-          <p>We welcome reviewers from AI/ML, NLP, HCI, cognitive science, psychology, philosophy of mind, sociology/anthropology, education, digital mental health/healthcare, ethics, law/policy, and related fields. Even if your expertise is rooted in one discipline or method, your perspective would be highly valuable.</p>
-        </article>
-        <article class="subtle-panel">
-          <div class="kicker">Reviewer form</div>
-          <h2>Registration link</h2>
-          <p><a class="inline-link" href="#" data-placeholder-link>Reviewer registration form</a></p>
-          <p class="muted-block">Reviewers will typically be assigned 2–3 papers and should have an up-to-date OpenReview profile.</p>
+          <section class="calls-section">
+            <div class="kicker">Dates</div>
+            <h2>Important dates</h2>
+            <ul class="dates-list">
+              <li>Submissions open: July 24, 2026</li>
+              <li>Submission deadline: August 27, 2026 (AoE)</li>
+              <li>Notification of acceptance: September 28, 2026</li>
+              <li>Workshop date: December 12 or 13, 2026 (exact day TBA)</li>
+              <li>Location: Paris</li>
+            </ul>
+            <p class="calls-note">All deadlines are 23:59 Anywhere on Earth (AoE).</p>
+          </section>
         </article>
       </div>
     </section>

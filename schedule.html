@@ -4,10 +4,53 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Schedule | AI and the Self</title>
-  <meta name="description" content="Tentative schedule for the AI and the Self workshop at NeurIPS 2026.">
+  <meta name="description" content="Schedule outline for the AI and the Self workshop at NeurIPS 2026.">
   <meta name="theme-color" content="#3855a5">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%233855a5'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-size='46' fill='white' font-family='Georgia, serif'%3EAS%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .timeline {
+      display: grid;
+      gap: 1rem;
+    }
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .timeline-time {
+      padding-top: 0.35rem;
+      font-weight: 700;
+      color: var(--warm);
+      letter-spacing: 0.02em;
+    }
+    .timeline-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 1rem 1.1rem;
+    }
+    .timeline-card h2 {
+      margin-bottom: 0.35rem;
+      font-size: 1.2rem;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+    .timeline-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+    @media (max-width: 760px) {
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+      .timeline-time {
+        padding-top: 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -21,7 +64,7 @@
       </button>
       <nav class="site-nav" data-nav>
         <a href="index.html">Home</a>
-        <a href="call-for-papers.html">Call for Papers</a>
+        <a href="call-for-papers.html">Calls</a>
         <a href="schedule.html" aria-current="page">Schedule</a>
         <a href="organizers.html">Organizers</a>
       </nav>
@@ -30,25 +73,10 @@
 
   <main>
     <section class="hero page-hero page-hero-tight">
-      <div class="container content-grid">
-        <div>
-          <div class="eyebrow">Tentative schedule</div>
-          <h1 class="page-title page-title-small">One-day workshop outline</h1>
-          <p class="hero-text">A more detailed program will be posted once the workshop day, invited talks, and accepted papers are finalized. The outline below reflects the current working structure.</p>
-        </div>
-        <aside class="resource-card">
-          <div class="panel-heading compact-head">
-            <div>
-              <div class="kicker">Workshop</div>
-              <h2>Event details</h2>
-            </div>
-          </div>
-          <div class="date-list">
-            <div class="date-box"><span>Date</span><strong>December 12 or 13, 2026</strong></div>
-            <div class="date-box"><span>Venue</span><strong>Paris</strong></div>
-            <div class="date-box"><span>Status</span><strong>Tentative</strong></div>
-          </div>
-        </aside>
+      <div class="container">
+        <div class="eyebrow">Schedule</div>
+        <h1 class="page-title page-title-small">One-day workshop outline</h1>
+        <p class="hero-text">A more detailed program will be posted once the exact workshop day is announced. The workshop will take place in Paris on December 12 or 13, 2026.</p>
       </div>
     </section>
 
@@ -56,63 +84,63 @@
       <div class="container">
         <div class="timeline">
           <article class="timeline-item">
-            <div class="timeline-time">09:00–09:15</div>
+            <div class="timeline-time">08:00-08:15</div>
             <div class="timeline-card">
               <h2>Opening remarks and workshop agenda</h2>
               <p>Introduction to the workshop and framing of the day.</p>
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-time">09:15–10:15</div>
+            <div class="timeline-time">08:15-09:15</div>
             <div class="timeline-card">
               <h2>Keynote I</h2>
               <p><em>The Philosophical Self in the Age of AI</em></p>
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-time">10:15–11:15</div>
+            <div class="timeline-time">09:15-10:15</div>
             <div class="timeline-card">
               <h2>Panel discussion</h2>
               <p>Interdisciplinary perspectives on the experiential self.</p>
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-time">11:15–12:45</div>
+            <div class="timeline-time">10:15-11:45</div>
             <div class="timeline-card">
               <h2>Coffee break and poster session I</h2>
               <p>Time for informal discussion and poster viewing.</p>
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-time">12:45–14:15</div>
+            <div class="timeline-time">11:45-12:45</div>
             <div class="timeline-card">
               <h2>Lunch</h2>
               <p>Midday break.</p>
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-time">14:15–15:00</div>
+            <div class="timeline-time">12:45-13:30</div>
             <div class="timeline-card">
               <h2>Keynote II</h2>
               <p><em>The Empirical Self in AI Systems</em></p>
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-time">15:00–16:30</div>
+            <div class="timeline-time">13:30-15:00</div>
             <div class="timeline-card">
               <h2>Spotlight presentations</h2>
               <p>Short talks from accepted papers.</p>
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-time">16:30–18:00</div>
+            <div class="timeline-time">15:00-16:30</div>
             <div class="timeline-card">
               <h2>Coffee break and poster session II</h2>
               <p>Additional poster viewing and discussion.</p>
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-time">18:00–18:30</div>
+            <div class="timeline-time">16:30-17:00</div>
             <div class="timeline-card">
               <h2>Closing remarks</h2>
               <p>Best paper awards and next steps for the AI and Self community.</p>
@@ -131,7 +159,7 @@
       </div>
       <div class="footer-links">
         <a href="index.html">Home</a>
-        <a href="call-for-papers.html">Call for Papers</a>
+        <a href="call-for-papers.html">Calls</a>
         <a href="organizers.html">Organizers</a>
       </div>
     </div>
