@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organizers | AI and the Self</title>
+  <meta name="description" content="Organizer bios for the AI and the Self workshop at NeurIPS 2026.">
+  <meta name="theme-color" content="#3855a5">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%233855a5'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-size='46' fill='white' font-family='Georgia, serif'%3EAS%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .organizer-list {
+      display: grid;
+      gap: 1rem;
+    }
+    .organizer-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      border-radius: 26px;
+      padding: 1.2rem;
+    }
+    .organizer-wrap {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 1.1rem;
+      align-items: start;
+    }
+    .organizer-photo-frame {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(135deg, var(--accent-soft), rgba(154, 109, 65, 0.18));
+    }
+    .organizer-photo {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .organizer-fallback {
+      position: absolute;
+      inset: 0;
+      display: none;
+      place-items: center;
+      color: var(--accent-strong);
+      font-size: 1.55rem;
+      font-weight: 700;
+    }
+    .bio-affiliation {
+      margin: 0 0 0.6rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin: 0 0 0.9rem;
+    }
+    .link-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.42rem;
+      padding: 0.42rem 0.72rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface-soft);
+      color: var(--accent);
+      text-decoration: none;
+      transition: border-color var(--transition), color var(--transition), background var(--transition), transform var(--transition);
+      font-size: 0.86rem;
+      font-weight: 600;
+      line-height: 1;
+    }
+    .link-chip:hover {
+      border-color: var(--accent);
+      color: var(--accent-strong);
+      background: #ffffff;
+      transform: translateY(-1px);
+    }
+    .link-chip svg {
+      width: 1rem;
+      height: 1rem;
+      fill: currentColor;
+      flex: 0 0 auto;
+    }
+    .organizer-card h2 {
+      margin-bottom: 0.25rem;
+      font-size: 1.45rem;
+    }
+    .organizer-card p:last-child {
+      margin-bottom: 0;
+      color: #34424a;
+    }
+    @media (max-width: 640px) {
+      .organizer-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <symbol id="icon-globe" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm6.93 9h-3.12a15.7 15.7 0 0 0-1.14-4.18A8.03 8.03 0 0 1 18.93 11ZM12 4c.79 0 2.1 1.94 2.65 5H9.35C9.9 5.94 11.21 4 12 4ZM9.33 6.82A15.7 15.7 0 0 0 8.19 11H5.07a8.03 8.03 0 0 1 4.26-4.18ZM5.07 13h3.12c.16 1.5.55 2.93 1.14 4.18A8.03 8.03 0 0 1 5.07 13Zm6.93 7c-.79 0-2.1-1.94-2.65-5h5.3C14.1 18.06 12.79 20 12 20Zm2.67-2.82c.59-1.25.98-2.68 1.14-4.18h3.12a8.03 8.03 0 0 1-4.26 4.18Z"/>
+    </symbol>
+    <symbol id="icon-scholar" viewBox="0 0 24 24">
+      <path d="M12 3L1 9l11 6l9-4.91V17h2V9L12 3Zm0 10.67L5.04 9.88L12 6.09l6.96 3.79L12 13.67ZM6 13.61V17c0 1.9 3.58 4 6 4s6-2.1 6-4v-3.39l-6 3.27l-6-3.27Z"/>
+    </symbol>
+    <symbol id="icon-building" viewBox="0 0 24 24">
+      <path d="M3 21h18v-2h-2V3H5v16H3v2Zm4-4v-2h2v2H7Zm0-4v-2h2v2H7Zm0-4V7h2v2H7Zm4 8v-2h2v2h-2Zm0-4v-2h2v2h-2Zm0-4V7h2v2h-2Zm4 8v-2h2v2h-2Zm0-4v-2h2v2h-2Zm0-4V7h2v2h-2Z"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <path d="M3 6h18v12H3V6Zm2 2v.27l7 4.86l7-4.86V8l-7 4.86L5 8Z"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24">
+      <path d="M5.25 3A2.25 2.25 0 1 1 3 5.25 2.25 2.25 0 0 1 5.25 3ZM3.75 8.25h3v12h-3v-12Zm5.25 0h2.88v1.64h.04c.4-.76 1.38-1.88 3.08-1.88 3.29 0 3.9 2.16 3.9 4.97v7.27h-3v-6.44c0-1.54-.03-3.52-2.14-3.52-2.15 0-2.48 1.68-2.48 3.41v6.55h-3v-12Z"/>
+    </symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path d="M12 .75A11.25 11.25 0 0 0 .75 12c0 4.96 3.21 9.18 7.66 10.66.56.1.76-.24.76-.54 0-.27-.01-.98-.02-1.92-3.12.68-3.79-1.51-3.79-1.51-.52-1.29-1.26-1.64-1.26-1.64-1.03-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1.01 1.72 2.65 1.22 3.3.93.1-.73.39-1.22.71-1.5-2.49-.28-5.11-1.25-5.11-5.55 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.11 1.16a10.83 10.83 0 0 1 5.67 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.54.23 2.68.11 2.96.72.79 1.16 1.8 1.16 3.03 0 4.31-2.62 5.27-5.13 5.54.4.34.76 1.01.76 2.05 0 1.48-.01 2.67-.01 3.03 0 .3.2.65.77.54A11.25 11.25 0 0 0 23.25 12 11.25 11.25 0 0 0 12 .75Z"/>
+    </symbol>
+    <symbol id="icon-orcid" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"></circle>
+      <circle cx="8" cy="8" r="1.4" fill="#fff"></circle>
+      <rect x="7" y="10.5" width="2" height="6.5" rx="0.6" fill="#fff"></rect>
+      <path d="M12 10.5h2.15c1.94 0 3.35 1.27 3.35 3.25S16.09 17 14.15 17H12v-6.5Zm2.04 4.94c1.05 0 1.7-.62 1.7-1.69 0-1.08-.65-1.69-1.7-1.69h-.38v3.38h.38Z" fill="#fff"></path>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="AI and the Self home">
+        <span class="brand-title">AI and the Self</span>
+        <span class="brand-subtitle">NeurIPS 2026 Workshop</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-menu-toggle>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <!-- <a href="call-for-papers.html">Calls</a> -->
+        <a href="schedule.html">Schedule</a>
+        <a href="organizers.html" aria-current="page">Organizers</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-hero page-hero-tight">
+      <div class="container">
+        <div class="eyebrow">Organizers</div>
+        <h1 class="page-title page-title-small">Workshop organizers</h1>
+      </div>
+    </section>
+
+    <section class="section section-compact">
+      <div class="container organizer-list">
+        <article class="organizer-card">
+          <div class="organizer-wrap">
+            <div class="organizer-photo-frame">
+              <img class="organizer-photo" src="assets/people/jacki-oneill.jpg" alt="Jacki O&#39;Neill" loading="lazy" onerror="if(!this.dataset.altimg){this.dataset.altimg='1';this.src='assets/organizers/jacki-oneill.svg';}else{this.style.display='none';this.nextElementSibling.style.display='grid';}">
+              <div class="organizer-fallback" aria-hidden="true">JO</div>
+            </div>
+            <div>
+              <h2>Jacki O&#39;Neill</h2>
+              <p class="bio-affiliation">Microsoft Research Africa, Nairobi</p>
+              <div class="link-row">
+                <a class="link-chip" href="https://www.microsoft.com/en-us/research/people/jaoneil/" target="_blank" rel="noopener noreferrer" aria-label="Jacki O&#39;Neill Microsoft Research profile"><svg><use href="#icon-building"></use></svg><span>Microsoft</span></a>
+                <a class="link-chip" href="https://scholar.google.com/citations?hl=en&amp;user=3frDpO4AAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Jacki O&#39;Neill Google Scholar"><svg><use href="#icon-scholar"></use></svg><span>Scholar</span></a>
+                <a class="link-chip" href="mailto:jaoneil@microsoft.com" aria-label="Email Jacki O&#39;Neill"><svg><use href="#icon-mail"></use></svg><span>Email</span></a>
+              </div>
+              <p>Jacki O&#39;Neill is the Director and founding Lab Director of Microsoft Research Africa, Nairobi (formerly MARI). She applies ethnographic and HCI methods to build culturally grounded, human-centered AI and translate fieldwork into systems across work, health, and agriculture. She received the ACM SIGCHI Societal Impact Award (2026) and has served on organizing/program committees for CHI, CSCW, ICTD, and ECSCW, including co-organizing the Nairobi workshop behind the AI and the Future of Work in Africa white paper.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="organizer-card">
+          <div class="organizer-wrap">
+            <div class="organizer-photo-frame">
+              <img class="organizer-photo" src="assets/people/haneesha-pinnamaraju.jpg" alt="Haneesha Pinnamaraju" loading="lazy" onerror="if(!this.dataset.altimg){this.dataset.altimg='1';this.src='assets/organizers/haneesha-pinnamaraju.svg';}else{this.style.display='none';this.nextElementSibling.style.display='grid';}">
+              <div class="organizer-fallback" aria-hidden="true">HP</div>
+            </div>
+            <div>
+              <h2>Dr. Haneesha Pinnamaraju</h2>
+              <p class="bio-affiliation">SHINE Child Development Center, Dubai</p>
+              <div class="link-row">
+                <a class="link-chip" href="https://shinecdc.ae/meet-the-shine-team/dr-haneesha-pinnamaraju/" target="_blank" rel="noopener noreferrer" aria-label="Haneesha Pinnamaraju SHINE profile"><svg><use href="#icon-building"></use></svg><span>SHINE</span></a>
+                <a class="link-chip" href="mailto:drhaneesha@shinecdc.ae" aria-label="Email Haneesha Pinnamaraju"><svg><use href="#icon-mail"></use></svg><span>Email</span></a>
+              </div>
+              <p>Haneesha Pinnamaraju is the Medical Director at SHINE Child Development Center, Dubai, and a Developmental & Behavioral Pediatrician. Through her work and expertise on neurodiversity and inclusive education, she contributes developmental perspectives to discussions on the design, use, and societal impact of AI, with a focus on ensuring that AI technologies support inclusion, human flourishing, and the diverse developmental needs of children and adolescents.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="organizer-card">
+          <div class="organizer-wrap">
+            <div class="organizer-photo-frame">
+              <img class="organizer-photo" src="assets/people/sandrine-r-schiller.jpg" alt="Sandrine R. Schiller" loading="lazy" onerror="if(!this.dataset.altimg){this.dataset.altimg='1';this.src='assets/organizers/sandrine-r-schiller.svg';}else{this.style.display='none';this.nextElementSibling.style.display='grid';}">
+              <div class="organizer-fallback" aria-hidden="true">SS</div>
+            </div>
+            <div>
+              <h2>Sandrine R. Schiller</h2>
+              <p class="bio-affiliation">University of Copenhagen</p>
+              <div class="link-row">
+                <a class="link-chip" href="https://www.linkedin.com/in/sandrine-r-schiller-ph-d-66969385/" target="_blank" rel="noopener noreferrer" aria-label="Sandrine R. Schiller LinkedIn"><svg><use href="#icon-linkedin"></use></svg><span>LinkedIn</span></a>
+                <a class="link-chip" href="https://scholar.google.com/citations?hl=en&amp;user=WrTqJuMAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Sandrine R. Schiller Google Scholar"><svg><use href="#icon-scholar"></use></svg><span>Scholar</span></a>
+                <a class="link-chip" href="mailto:sandrine.hansen@gmail.com" aria-label="Email Sandrine R. Schiller"><svg><use href="#icon-mail"></use></svg><span>Email</span></a>
+              </div>
+              <p>Sandrine R. Schiller is a postdoctoral fellow at the Center for Philosophy of AI at the University of Copenhagen. Her research explores the implications of intimate relationships with AI chatbots and how generative AI transforms the conditions of selfhood and intersubjective relations. Her research also extends to philosophical questions in mechanistic interpretability and the risks of engagement optimization. Her research has been published by AAAI/ACM and NAACL, as well as more traditional venues for philosophy.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="organizer-card">
+          <div class="organizer-wrap">
+            <div class="organizer-photo-frame">
+              <img class="organizer-photo" src="assets/people/akhil-arora.jpg" alt="Akhil Arora" loading="lazy" onerror="if(!this.dataset.altimg){this.dataset.altimg='1';this.src='assets/organizers/akhil-arora.svg';}else{this.style.display='none';this.nextElementSibling.style.display='grid';}">
+              <div class="organizer-fallback" aria-hidden="true">AA</div>
+            </div>
+            <div>
+              <h2>Akhil Arora</h2>
+              <p class="bio-affiliation">Aarhus University</p>
+              <div class="link-row">
+                <a class="link-chip" href="https://www.cs.au.dk/~clan/people/aarora" target="_blank" rel="noopener noreferrer" aria-label="Akhil Arora Homepage"><svg><use href="#icon-globe"></use></svg><span>Site</span></a>
+                <a class="link-chip" href="https://scholar.google.com/citations?hl=en&amp;user=uCrGCckAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Akhil Arora Google Scholar"><svg><use href="#icon-scholar"></use></svg><span>Scholar</span></a>
+                <a class="link-chip" href="mailto:akhil.arora@cs.au.dk" aria-label="Email Akhil Arora"><svg><use href="#icon-mail"></use></svg><span>Email</span></a>
+              </div>
+              <p>Akhil Arora is a professor of computer science at Aarhus University, where he leads the CLAN for AI Research on Language and Networks (or “CLAN” for short). He is a fellow of Copenhagen Center for Social Data Science, an affiliate of ELLIS Unit Copenhagen and Pioneer Centre for AI, and a formal collaborator of the Wikimedia Foundation. Akhil’s research lies broadly in human-centered and trustworthy AI, with a focus on structured and multi-agent reasoning, multilinguality, culturally grounded language technologies, and systems for reliable and cost-efficient LLM inference. His work has been published in top-tier AI venues including ICML, ACL, EMNLP, NAACL, and WWW. He has co-organized multiple workshops collocated with top venues including ACL, EMNLP, and SIGMOD. Akhil is a director of the P1-programs on Green AI and AI & Society.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="organizer-card">
+          <div class="organizer-wrap">
+            <div class="organizer-photo-frame">
+              <img class="organizer-photo" src="assets/people/monojit-choudhury.jpg" alt="Monojit Choudhury" loading="lazy" onerror="if(!this.dataset.altimg){this.dataset.altimg='1';this.src='assets/organizers/monojit-choudhury.svg';}else{this.style.display='none';this.nextElementSibling.style.display='grid';}">
+              <div class="organizer-fallback" aria-hidden="true">MC</div>
+            </div>
+            <div>
+              <h2>Monojit Choudhury</h2>
+              <p class="bio-affiliation">Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)</p>
+              <div class="link-row">
+                <a class="link-chip" href="https://mbzuai.ac.ae/study/faculty/monojit-choudhury/" target="_blank" rel="noopener noreferrer" aria-label="Monojit Choudhury MBZUAI profile"><svg><use href="#icon-building"></use></svg><span>MBZUAI</span></a>
+                <a class="link-chip" href="https://scholar.google.com/citations?hl=en&amp;user=WR1ImCMAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Monojit Choudhury Google Scholar"><svg><use href="#icon-scholar"></use></svg><span>Scholar</span></a>
+                <a class="link-chip" href="mailto:monojit.choudhury@mbzuai.ac.ae" aria-label="Email Monojit Choudhury"><svg><use href="#icon-mail"></use></svg><span>Email</span></a>
+              </div>
+              <p>Monojit Choudhury is a Professor of Natural Language Processing, and the Chief Scientist of the Institute of Agriculture and AI at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), Abu Dhabi. Prior to this, he was a Principal Scientist at Microsoft Research Lab and Microsoft Turing, India. His research interests lie in the intersection of NLP, Social and Cultural aspects of Technology use, and Ethics. He is a member of the ACL Ethics Committee. Monojit has organized numerous workshops at *ACL conferences, including the TextGraphs series and Computational Processing of Code-mixing series.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="organizer-card">
+          <div class="organizer-wrap">
+            <div class="organizer-photo-frame">
+              <img class="organizer-photo" src="assets/people/mukund-choudhary.jpg" alt="Mukund Choudhary" loading="lazy" onerror="if(!this.dataset.altimg){this.dataset.altimg='1';this.src='assets/organizers/mukund-choudhary.svg';}else{this.style.display='none';this.nextElementSibling.style.display='grid';}">
+              <div class="organizer-fallback" aria-hidden="true">MC</div>
+            </div>
+            <div>
+              <h2>Mukund Choudhary</h2>
+              <p class="bio-affiliation">Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)</p>
+              <div class="link-row">
+                <a class="link-chip" href="https://mukundc2k.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Mukund Choudhary homepage"><svg><use href="#icon-globe"></use></svg><span>Site</span></a>
+                <a class="link-chip" href="https://scholar.google.com/citations?hl=en&amp;user=29EdHIgAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Mukund Choudhary Google Scholar"><svg><use href="#icon-scholar"></use></svg><span>Scholar</span></a>
+                <a class="link-chip" href="https://www.linkedin.com/in/mukundc2k/" target="_blank" rel="noopener noreferrer" aria-label="Mukund Choudhary LinkedIn"><svg><use href="#icon-linkedin"></use></svg><span>LinkedIn</span></a>
+                <a class="link-chip" href="mailto:mukund.choudhary@mbzuai.ac.ae" aria-label="Email Mukund Choudhary"><svg><use href="#icon-mail"></use></svg><span>Email</span></a>
+              </div>
+              <p>Mukund Choudhary is a PhD candidate at MBZUAI researching how LLMs structure language or “LLM linguistics”, currently focused on ways to compare LLM and human linguistic and language-learning behaviour and distinguishing it from internal mechanisms. Apart from regularly reviewing and volunteering at *ACL conferences, he has also headed the organization, coordination, and outreach for the Panini Linguistics Olympiad for high-school students in India.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="organizer-card">
+          <div class="organizer-wrap">
+            <div class="organizer-photo-frame">
+              <img class="organizer-photo" src="assets/people/abdoul-jalil-djiberou-mahamadou.jpg" alt="Abdoul Jalil Djiberou Mahamadou" loading="lazy" onerror="if(!this.dataset.altimg){this.dataset.altimg='1';this.src='assets/organizers/abdoul-jalil-djiberou-mahamadou.svg';}else{this.style.display='none';this.nextElementSibling.style.display='grid';}">
+              <div class="organizer-fallback" aria-hidden="true">AJ</div>
+            </div>
+            <div>
+              <h2>Abdoul Jalil Djiberou Mahamadou</h2>
+              <p class="bio-affiliation">Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)</p>
+              <div class="link-row">
+                <a class="link-chip" href="https://abdjiber.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Abdoul Jalil Djiberou Mahamadou homepage"><svg><use href="#icon-globe"></use></svg><span>Site</span></a>
+                <a class="link-chip" href="https://scholar.google.com/citations?hl=en&amp;user=3v5pE6MAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Abdoul Jalil Djiberou Mahamadou Google Scholar"><svg><use href="#icon-scholar"></use></svg><span>Scholar</span></a>
+                <a class="link-chip" href="mailto:abdoul.mahamadou@mbzuai.ac.ae" aria-label="Email Abdoul Jalil Djiberou Mahamadou"><svg><use href="#icon-mail"></use></svg><span>Email</span></a>
+              </div>
+              <p>Abdoul Jalil Djiberou Mahamadou is a Postdoctoral Associate at MBZUAI working on personalization, cultural sensitivity, and inclusion in AI. He has previously worked on the ethics of AI in healthcare, algorithmic bias and fairness, participatory AI, AI and neuroscience, causal inference, and uncertainty modelling. He is an organizing comittee member of the incoming AACL and EMNLP tutorial on ethics in NLP.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>AI and the Self</strong>
+        <small>NeurIPS 2026 Workshop · Palais des Congrès de Paris, Paris, France · December 12, 2026</small>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <!-- <a href="call-for-papers.html">Calls</a> -->
+        <a href="schedule.html">Schedule</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
