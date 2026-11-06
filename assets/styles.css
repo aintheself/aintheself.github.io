@@ -77,7 +77,6 @@ small { display: block; color: var(--muted); }
   display: inline-flex; align-items: center; gap: 0.75rem;
   color: var(--ink); text-decoration: none;
 }
-
 .brand-mark { width: auto; height: 46px; flex: 0 0 auto; }
 .brand-title { display: block; font-family: var(--font-name); font-size: 1.15rem; font-weight: 700; color: var(--pack-name); line-height: 1.3; }
 .brand-subtitle { display: block; font-family: var(--font-heading); font-size: 0.8rem; font-weight: 500; color: var(--ink); line-height: 1.4; }
@@ -117,7 +116,6 @@ small { display: block; color: var(--muted); }
 .eyebrow, .kicker, .meta-label, .status-pill {
   font-family: var(--font-heading); letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.75rem; font-weight: 600;
 }
-
 .hero-caption { margin: 0 0 0.6rem; font-family: var(--font-serif); font-style: italic; font-size: 1.08rem; color: var(--ink); }
 .eyebrow, .kicker, .meta-label { color: var(--warm); }
 
@@ -146,7 +144,10 @@ small { display: block; color: var(--muted); }
 
 .hero-meta { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.7rem; }
 
-
+/* --------------------------------------------------------------------------
+   Home hero: the artwork sits to the right and runs off the page edge,
+   with its torn left edge facing the title, as on the poster.
+   -------------------------------------------------------------------------- */
 .home-hero {
   container-type: inline-size;
   display: grid;
@@ -330,14 +331,14 @@ a.speaker-chip:hover, a.link-chip:hover {
 .agenda-meta a, .agenda-group-note a { color: var(--accent); text-decoration: none; font-weight: 600; }
 .agenda-meta a:hover, .agenda-group-note a:hover { color: var(--accent-strong); text-decoration: underline; text-underline-offset: 3px; }
 
-
+/* Breaks: quiet, so the sessions carry the page */
 .agenda-break { padding-block: 0.65rem; background: var(--surface-soft); }
 .agenda-break .agenda-title { font-weight: 500; color: var(--muted); }
 
-
+/* Session groups: a light blue tint, titles in the artwork blue */
 .agenda-group {
   padding: 1.15rem 0 0.5rem;
-  background: #f4f7fa;
+  background: #f4f7fa;   /* artwork blue at ~5% on white */
 }
 .agenda-group-head { padding: 0 1.5rem 0.35rem; }
 .agenda-group-title { margin: 0; font-size: 1.2rem; color: var(--art); }
@@ -404,4 +405,20 @@ a.speaker-chip:hover, a.link-chip:hover {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
+}
+
+/* --------------------------------------------------------------------------
+   Breaks inside a session block (coffee during the poster session).
+   Same warm fill as the other breaks, set in as a card so the session's
+   blue tint frames it. Padding offsets keep the times in one column.
+   -------------------------------------------------------------------------- */
+.agenda-group .agenda-break {
+  margin: 0.35rem 0.75rem;
+  padding: 0.65rem calc(0.75rem - 1px);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface-soft);
+}
+@media (max-width: 640px) {
+  .agenda-group .agenda-break { margin-inline: 0.5rem; padding-inline: calc(0.6rem - 1px); }
 }
