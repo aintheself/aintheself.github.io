@@ -422,3 +422,13 @@ a.speaker-chip:hover, a.link-chip:hover {
 @media (max-width: 640px) {
   .agenda-group .agenda-break { margin-inline: 0.5rem; padding-inline: calc(0.6rem - 1px); }
 }
+
+/* --------------------------------------------------------------------------
+   Abstract dropdowns in the schedule: the homepage's "Read more" toggle,
+   without its divider line, with the + beside the label
+   -------------------------------------------------------------------------- */
+.agenda .overview-toggle { margin-top: 0.4rem; padding-top: 0; border-top: 0; }
+.agenda .overview-toggle summary { display: inline-flex; gap: 0.5rem; font-size: 0.95rem; }
+.agenda .overview-toggle summary::after { margin-left: 0; width: 1.35rem; height: 1.35rem; }
+.agenda .expand-body { padding-top: 0.5rem; max-width: 64ch; }
+.agenda .expand-body p { margin: 0; color: var(--ink); line-height: 1.65; }
